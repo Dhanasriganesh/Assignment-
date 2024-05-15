@@ -167,8 +167,8 @@ function Login() {
             </WelcomeDiv>
             <Links>
             <LogLink active={index===1} lang={lang}>{languageData[lang]?.personalinfo}</LogLink>
-            <LogLink active={index===2 || index===3} lang={lang}>{languageData[lang]?.personalpre}</LogLink>
-            <LogLink active={index >=4} lang={lang}>{languageData[lang]?.physicalinfo}</LogLink>
+            <LogLink active={index===2 || index===3} lang={lang}>{languageData[lang]?.physicalinfo}</LogLink>
+            <LogLink active={index >=4} lang={lang}>{languageData[lang]?.personalpre}</LogLink>
             </Links>
         </Welcome>
         <LoginInfoContianer>
@@ -179,7 +179,7 @@ function Login() {
                 {index === 4 && <PersonalPreferences1 updateUserInfo={updateUserInfo} nextButton={nextButton} userInfo={userInfo} />}
                 {index === 5 && <PersonalPreferences2 updateUserInfo={updateUserInfo} nextButton={nextButton} userInfo={userInfo} />}
                 {index === 6 && <BodyParts updateUserInfo={updateUserInfo} nextButton={nextButton} userInfo={userInfo} />}
-                {index === 7 && <PersonalPreferences3 updateUserInfo={updateUserInfo} nextButton={nextButton} userInfo={userInfo} />}
+                {/* {index === 7 && <PersonalPreferences3 updateUserInfo={updateUserInfo} nextButton={nextButton} userInfo={userInfo} />} */}
 
                 <ButtonContainer>
                     {index === 1 ? (
